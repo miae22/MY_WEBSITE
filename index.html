@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mia Evans / About Me</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mia Evans</h1>
+    <img src="profile.jpg" class="profile" alt="portrait of Mia Evans">
+    <p>
+      <a href="mailto:miae@uoregon.edu" title="Let's Get in Touch!">miae@uoregon.edu</a> 
+    </p>
+    <nav aria-label="Menu">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">A Little Bit About Me</h2>
+      <p>I am a student at the University of Oregon, born and raised in the Pacific Northwest. I am passionate about communication and storytelling; especially through digital media.</p>
+    </section>
+
+    <section id="education" aria-labelledby="edu-heading">
+      <h2 id="edu-heading">Education</h2>
+      <p>University of Oregon — B.A. in Visual Journalism, concentration in Art and Technology (2024 – present)</p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Python</li>
+        <li>Adobe Creative Suite</li>
+        <li>Procreate, Figma, Inkscape</li>
+        <li>Camera operations</li>
+      </ul>
+
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Communication</li>
+        <li>Teamwork; Leadership and collaboration</li>
+        <li>Creative problem-solving</li>
+        <li>Adaptability</li>
+      </ul>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <article>
+        <h3>Literary Text Analysis with SpaCy</h3>
+        <p>Analyzed the significance of words in the literary text Jane Eyre using SpaCy. <a href="projects/portfolio.html" title="View project">View Details</a></p>
+      </article>
+
+      <article>
+        <h3>Visualizing Titanic Data</h3>
+        <p>Explored fundamental data-science skills using the Titanic passenger dataset. <a href="projects/coastlines.html" title="View project">View Details</a></p>
+      </article>
+
+      <article>
+        <h3>Investigating and Visualizing Global Disaster Data</h3>
+        <p> Extracted patterns from a dataset on global disasters using Python and various data visualization libraries. <a href="projects/data-viz.html" title="View project">View Details</a></p>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Lets connect on <a href="https://github.com/miae22" title="My GitHub" target="_blank" rel="noopener">GitHub</a> or email me at
+        <a href="mailto:miae@uoregon.edu">miae@uoregon.edu</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Mia Evans. All rights reserved.</p>
+    <script>
+      // small JS just to set current year (optional)
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
+</html>
